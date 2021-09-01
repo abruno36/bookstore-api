@@ -6,8 +6,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.bruno.bookstore.domain.Categoria;
-import com.bruno.bookstore.exceptions.ObjectNotFoundException;
 import com.bruno.bookstore.repositories.CategoriaRepository;
+import com.bruno.bookstore.services.exceptions.ObjectNotFoundException;
 
 @Service
 public class CategoriaService {

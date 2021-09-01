@@ -1,4 +1,4 @@
-package com.bruno.bookstore.exceptions;
+package com.bruno.bookstore.services.exceptions;
 
 public class ObjectNotFoundException extends RuntimeException {
 
