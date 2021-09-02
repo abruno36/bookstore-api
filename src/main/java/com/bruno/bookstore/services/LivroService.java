@@ -52,7 +52,8 @@ public class LivroService {
 	}
 
 	public void delete(Integer id) {
-		findById(id);
+		Livro obj = findById(id);
+		repository.delete(obj);
 	}
 
 }
