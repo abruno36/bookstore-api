@@ -25,6 +25,7 @@ public class DBService {
 		Categoria cat2 = new Categoria(null, "Culinária", "Livros de Alimentações e Receitas");
 		Categoria cat3 = new Categoria(null, "Romance", "Livros em geral");
 		Categoria cat4 = new Categoria(null, "Suspense", "Livros de suspense e terror");
+		Categoria cat5 = new Categoria(null, "Livros Clássicos", "Literatura Classica e Ficção");
 
 		Livro l1 = new Livro(null, "Clean Code", "Robert Martin",
 				"Ao contrário do que se acredita, Lorem Ipsum não é simplesmente um texto randômico. ", cat1);
@@ -49,7 +50,7 @@ public class DBService {
 		cat3.getLivros().addAll(Arrays.asList(l4));
 		cat4.getLivros().addAll(Arrays.asList(l5, l6));
 
-		this.categoriaRepository.saveAll(Arrays.asList(cat1, cat2, cat3, cat4));
+		this.categoriaRepository.saveAll(Arrays.asList(cat1, cat2, cat3, cat4, cat5));
 		this.livroRepository.saveAll(Arrays.asList(l1, l2, l3, l4, l5, l6));
 	}
 
