@@ -6,6 +6,7 @@ import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import com.bruno.bookstore.domain.Categoria;
 import com.bruno.bookstore.domain.Livro;
 import com.bruno.bookstore.dtos.LivroDTO;
 import com.bruno.bookstore.repositories.LivroRepository;
@@ -31,8 +32,10 @@ public class LivroService {
 		return repository.findAllByCategoria(id_cat);
 	}
 
-	public Livro create(Livro obj) {
+	public Livro create(Integer id_cat, Livro obj) {
 		obj.setId(null);
+		Categoria cat = categoriaService.findById(id_cat);
+		obj.setCategoria(cat);
 		return repository.save(obj);
 	}
 
