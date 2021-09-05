@@ -29,6 +29,8 @@ public class DBService {
 		Categoria cat6 = new Categoria(null, "Ficção Científica", "Livros Cientificos");
 		Categoria cat7 = new Categoria(null, "Livros Infantis", "Histórias engraçadas");
 		Categoria cat8 = new Categoria(null, "eBooks em Inglês", "Recomendados para você | Histórias em geral");
+		Categoria cat9 = new Categoria(null, "Matemática Informática", "Matemática na Informática");
+		Categoria cat10 = new Categoria(null, "Geografia", "Ensino de Geografia aplicada no ensino fundamental");
 
 		Livro l1 = new Livro(null, "Clean Code", "Robert Martin",
 				"Ao contrário do que se acredita, Lorem Ipsum não é simplesmente um texto randômico. ", cat1);
@@ -75,8 +77,31 @@ public class DBService {
 				+ "\r\n"
 				+ "A standalone romantic thriller from #1 New York Times bestselling author Colleen Hoover.",
 				cat8);
-
-		cat1.getLivros().addAll(Arrays.asList(l1));
+		Livro l14 = new Livro(null, "Informática e Educação Matemática", "Marcelo Carvalho de Borba",
+				"Neste livro, Marcelo de Carvalho Borba e Miriam Godoy Penteado apresentam o resultado de mais um trabalho em conjunto sobre informática educativa. Eles trabalham há mais de dez anos em uma das principais tendências da Educação Matemática: a informática. Os autores apresentam exemplos do uso de informática com alunos e professores, para, então, debaterem desde temas ligados às políticas governamentais para a informática educativa até questões epistemológicas e pedagógicas relacionadas à utilização de computadores e calculadoras gráficas em Educação Matemática. Este livro se dirige àquele que ainda não está familiarizado com essa tendência e também àquele que gostaria de conhecer a visão particular dos autores sobre o tema.",
+				cat9);
+		Livro l15 = new Livro(null, "Guia prático de implementação da LGPD", "Daniel Donda",
+				"A Lei n. 13.709/2018, conhecida como Lei Geral de Proteção de Dados Pessoais (LGPD), promulgada em 14 de agosto de 2018, dispõe sobre o tratamento de dados pessoais. Trata-se de um marco regulatório inédito no Brasil e atingirá todas as instituições públicas e privadas que lidam com dados sensíveis. Com base nas melhores práticas de segurança no tratamento de dados, este livro responde as principais questões que surgem na preparação para estar em conformidade com a LGPD.\r\n"
+				+ "\r\n"
+				+ "De maneira simples e objetiva, Daniel Donda apresenta ações práticas que devem ser adotadas por todas as empresas que lidam com dados de cidadãos brasileiros, a fim de oferecer ferramentas para que o leitor possa tomar as melhores a decisões no tratamento seguro dos dados pessoais.\r\n"
+				+ "Ao abordar os principais aspectos previstos pela legislação de maneira clara, este livro se torna obra fundamental para empresários, profissionais e estudantes da tecnologia da informação e demais interessados no assunto.\r\n"
+				+ "\r\n"
+				+ "Daniel Donda é especialista em segurança da informação com mais de 20 anos de experiência. Formado em Matemática e em Segurança da Informação, atua profissionalmente como arquiteto de soluções para segurança e conformidade.\r\n"
+				+ "\r\n"
+				+ "Microsoft Most Valuable Professional (MVP) na competência Cloud and Datacenter Management desde 2011.",
+				cat9);
+		Livro l16 = new Livro(null, "Curso de Informática Básico", "Lucas Durigon",
+				"Processador de Textos, Planilha Eletrônica, Windows, Sistema Operacional, Curso de Informática, Noções de Informática, Histórica da Informática, Como formatar textos, como fazer planilhas, como fazer cálculos automáticos, Painel de Controle, Gerenciador de Impressão, Correção ortográfica de Textos, auto soma.", cat1);
+		Livro l17 = new Livro(null, "A geografia antes da Geografia", "Marcos Bau Brandão",
+				"Este livro eletrônico se divide em resumo, introdução, seis capítulos e o epílogo, como conclusão, além das referências (359 páginas). O primeiro capítulo é didático e metodológico ao versar sobre a práxis da sala de aula, como lugar geográfico de pausa, mas, acima de tudo, como local de troca de experiências para as aprendizagens dos estudantes e do professor, que deve ser um mediador, ora dialético, ora fenomenológico, em sua ação docente. Os capítulos posteriores foram dispostos em uma ideia evolutiva dos componentes universais que compõem a transdisciplinaridade do espaço a-geográfico e geográfico, seguindo cronologicamente a divisão que propomos para a construção do pensar o objeto espaço na Geografia ou a sua genealogia, como categoria de primórdio da disciplina enquanto ciência. Partimos do que chamamos de Pré-Geografia, em um segundo capítulo sobre a mecânica quântica e a relatividade do Big Bang no tecido gravitacional do espaço-tempo, de primórdio do cosmo, para chegarmos ao aparecimento da Terra em sua composição mais primitiva, até a solidificação das primeiras rochas e a composição da atmosfera terrestre, que deu chance ao aparecimento das primeiras formas de vida. O terceiro capítulo, o da Geografia Primitiva, chega aos primeiros hominídeos, descendentes do primata chipanzé, mas centra-se na espacialidade do Homo sapiens, que se mostrou a única espécie de hominídeo dominante, desde que houve a predominância da sedentarização agrícola no período neolítico. O quarto capítulo é de continuidade do entendimento da territorialidade do sapiens, uma vez que, nos leva a analogias de territorializações contemporâneas similares, seja na desigualdade entre os povos e no individualismo intolerante, seja na produção de excedentes, perpetuada como evolução acumulativa, mas que tem no medo da escassez a sua eterna continuidade. O quinto capítulo emenda o neolítico com o advindo dos primeiros escritos que chegaram a nós, nos quais, se encaixam no que intitulamos de Geografia da Idade Antiga e Aristotélica, pois só a escrita teve a capacidade de tornar a historiografia longínqua o suficiente para ser entendida como ciência. De Homero a Hesíodo e da filosofia pré-socrática à aristotélica, passando pela historiografia de Tucídides e Heródoto, chegamos ao sexto capítulo, dividido em dois períodos têmporo-espaciais: o do período da Geografia Ptolomaica e da Idade Média, da época que envolve o recorte da Geografia dominada pelos mapas cartográficos, de traço ptolomaico, com projeções que influenciaram o pensamento geográfico, desde Eratóstenes (e Estrabão), que teve rebatimento nas territorialidades do cristianismo, das cruzadas e da posterior crise feudal, até a chegada do período da Geografia das Grandes Navegações e dos primórdios da sistematização científica do espaço, com a cosmografia de Mercator e a ocupação de novos espaços continentais, ao que se insere no ideário de acesso a alicerces teóricos mais coesos e de influência filosófico-científica, com Descartes, Varenius, Newton e Kant, que já se encaixam em uma Geografia de primórdio basilar e sequencial à cientificidade do espaço, inclusive através das investidas de aproximação à Geografia Tradicional ou dos Fundadores, sistematizada no século XIX, propriamente alicerçada em Humboldt e Ritter e, posteriormente, em Ratzel e La Blache (aqui também consideramos Reclus e Kropotkin), assim como bastante difundida na literatura geográfica clássica.",
+				cat10);
+		Livro l18 = new Livro(null, "Elementos de Didática da Geografia", "Alfredo Braga Furtado",
+				"Este livro apresenta elementos de Didática voltados para o desenvolvimento de habilidades e de competências exigidas na profissão de geógrafo. O livro destina-se a alunos de cursos de graduação em Geografia (bacharelado e licenciatura). Destina-se também a professores dos cursos da área, que podem eventualmente considerar a leitura e a reflexão acerca do conteúdo do livro como forma de apreciação de suas próprias práticas didáticas.\r\n"
+				+ "\r\n"
+				+ "A partir das Diretrizes Curriculares do MEC para os cursos de Geografia, são identificados perfil, conteúdo de cada curso que os projetos pedagógicos das Instituições de Ensino Superior devem apresentar e habilidades e competências requeridas do profissional. Depois da descrição de métodos ou técnicas de ensino no capítulo 7, em quadros-resumo, são sintetizadas habilidades e competências que cada método ou técnica potencialmente pode desenvolver ou aprimorar. Desta forma, o docente pode selecionar as abordagens mais indicadas para sua disciplina, levando em conta habilidades e competências que seus alunos precisam exercitar.",
+				cat10);
+		
+		cat1.getLivros().addAll(Arrays.asList(l1, l16));
 		cat2.getLivros().addAll(Arrays.asList(l2, l3));
 		cat3.getLivros().addAll(Arrays.asList(l4));
 		cat4.getLivros().addAll(Arrays.asList(l5, l6));
@@ -84,9 +109,11 @@ public class DBService {
 		cat6.getLivros().addAll(Arrays.asList(l9));
 		cat7.getLivros().addAll(Arrays.asList(l10, l11));
 		cat8.getLivros().addAll(Arrays.asList(l12, l13));
+		cat9.getLivros().addAll(Arrays.asList(l14, l15));
+		cat10.getLivros().addAll(Arrays.asList(l17, l18));
 
-		this.categoriaRepository.saveAll(Arrays.asList(cat1, cat2, cat3, cat4, cat5, cat6, cat7, cat8));
-		this.livroRepository.saveAll(Arrays.asList(l1, l2, l3, l4, l5, l6, l7, l8, l9, l10, l11, l12, l13));
+		this.categoriaRepository.saveAll(Arrays.asList(cat1, cat2, cat3, cat4, cat5, cat6, cat7, cat8, cat9, cat10));
+		this.livroRepository.saveAll(Arrays.asList(l1, l2, l3, l4, l5, l6, l7, l8, l9, l10, l11, l12, l13, l14, l15, l16, l17, l18));
 	}
 
 }
