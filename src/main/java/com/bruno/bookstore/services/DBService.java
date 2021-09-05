@@ -31,6 +31,8 @@ public class DBService {
 		Categoria cat8 = new Categoria(null, "eBooks em Inglês", "Recomendados para você | Histórias em geral");
 		Categoria cat9 = new Categoria(null, "Matemática Informática", "Matemática na Informática");
 		Categoria cat10 = new Categoria(null, "Geografia", "Ensino de Geografia aplicada no ensino fundamental");
+		Categoria cat11 = new Categoria(null, "Histórias do Mar", "Histórias relacionadas ao mar e oceanos");
+		Categoria cat12 = new Categoria(null, "Magia Natural", "Mágicas na sua naturalidade");
 
 		Livro l1 = new Livro(null, "Clean Code", "Robert Martin",
 				"Ao contrário do que se acredita, Lorem Ipsum não é simplesmente um texto randômico. ", cat1);
@@ -100,6 +102,21 @@ public class DBService {
 				+ "\r\n"
 				+ "A partir das Diretrizes Curriculares do MEC para os cursos de Geografia, são identificados perfil, conteúdo de cada curso que os projetos pedagógicos das Instituições de Ensino Superior devem apresentar e habilidades e competências requeridas do profissional. Depois da descrição de métodos ou técnicas de ensino no capítulo 7, em quadros-resumo, são sintetizadas habilidades e competências que cada método ou técnica potencialmente pode desenvolver ou aprimorar. Desta forma, o docente pode selecionar as abordagens mais indicadas para sua disciplina, levando em conta habilidades e competências que seus alunos precisam exercitar.",
 				cat10);
+		Livro l19 = new Livro(null, "HISTÓRIAS DO MAR: 200 CASOS", "Jorge de Souza",
+				"Em 29 de janeiro de 2014, o casco de um pequeno barco foi dar numa esquecida praia das Ilhas Marshall, nos confins do Oceano Pacífico. Dentro dele havia um homem combalido e praticamente nu, mas com uma extraordinária história para contar: a de como sobrevivera 13 meses sem água nem comida no mar, depois que o motor de seu barco quebrou, condenando-o a atravessar, à deriva, o maior dos oceanos. Um feito inacreditável, não fosse ser pura verdade.\r\n"
+				+ "Esta e outras 199 histórias nas quais o mar é o principal protagonista compõe a coletânea de façanhas, dramas, aventuras, mistérios e odisseias marítimas que dão forma a este livro, fruto de anos de pesquisas sobre o período mais intenso da navegação humana, os últimos cinco séculos.\r\n"
+				+ "Algumas histórias são curtíssimas e curiosas; outras bem maiores, mas igualmente extraordinárias. Todas, contudo, têm em comum o fato de serem verídicas, embora, em alguns casos, sejam tão impressionantes que mais pareçam ficção. Mas não são.\r\n"
+				+ "Todas as histórias aqui contadas aconteceram de fato. Por mais incrível que isso possa parecer.",
+				cat11);
+		Livro l20 = new Livro(null, "Em Busca do Brasil", "Pablo Amaral Rebello",
+				"Século XVI. O mundo assume novas margens enquanto mapas seculares são redesenhados a uma velocidade assombrosa. Tudo graças às descobertas de novas terras do outro lado do grande mar Oceano e ao avanço predatório dos portugueses sobre o mercado de especiarias nas tão distantes e sonhadas Índias Orientais. É no extremo oposto do mundo conhecido até então que a presente história se inicia. Balas de canhão chovem sobre Calicute. Um encontro inesperado na costa africana dá início a uma perigosa conspiração. Na França, planos de homens poderosos atraem personagens de diversos reinos. Um marinheiro português com fama de mau, um inexperiente espião francês e um capitão inglês tido como louco se vem amarrados a uma trama que os fará cruzar oceanos e desbravar novos mundos numa aventura de tirar o fôlego. Em Busca do Brasil traz uma narrativa permeada de fatos históricos obscuros para jogar luz sobre os primeiros anos de ocupação europeia no maior país da América Latina. Uma leitura instigante capaz de surpreender aos leitores mais exigentes.",
+				cat11);
+		Livro l21 = new Livro(null, "Magia natural: Libro Básico del Novicio", "Carlos Esteban González Figueroa",
+				"Magia natural es una temática de esoterismo y psicomagia aplicada a la vida cotidiana que tiene como objetivo ayudarle al lector a desarrollar su poder personal que le permite modificar, crear y editar su propia realidad desde un conjunto de técnicas y metodologías propias de un mago como bien se puede decir. Magia natural es una escuela de iniciación, intermediación y maestría de las artes mágicas antiguas aplicadas al ser como centro de aprendizaje en la evolución del mismo en cada vida. El presente libro consiste de las herramientas básicas del primer nivel, cosmovisión de magia natural, métodos de alteración de la realidad y métodos de creación de hechizos y conjuros de magia natural.",
+				cat12);
+		Livro l22 = new Livro(null, "Segredos da Magia e Bruxaria", "Pierre Macedo",
+				"A palavra-chave deste livro é praticidade. Ele é destinado a quem quer praticar magia de forma rápida, sem a necessidade de ler longos livros teóricos. Com Segredos da Magia e Bruxaria, você aprende enquanto pratica. Ele contém uma variedade de feitiços e rituais exclusivos, como amor, dinheiro, beleza, evocações, proteção. O leitor também será introduzido aos selos mágicos, também chamados de sigilos, tais como selos de espíritos e planetários. Nenhum outro livro ensina a maneira correta de se evocar Lúcifer e Miguel. Nenhum outro livro fornece um ritual detalhado de beleza com os deuses nórdicos Frey e Freya ou um poderoso feitiço de amor com a misteriosa Lilith. Nenhum outro autor jamais abordou tantos assuntos, desde amor até magia planetária, em uma única obra, como Pierre Macedo fez. Não importa se você é um praticante de magia branca ou magia negra, um seguidor da Wicca ou se você precisa de alguma ajuda espiritual, esta obra foi escrita para você. Agora você tem em suas mãos a chave para mudar o curso da sua vida.",
+				cat12);
 		
 		cat1.getLivros().addAll(Arrays.asList(l1, l16));
 		cat2.getLivros().addAll(Arrays.asList(l2, l3));
@@ -111,9 +128,11 @@ public class DBService {
 		cat8.getLivros().addAll(Arrays.asList(l12, l13));
 		cat9.getLivros().addAll(Arrays.asList(l14, l15));
 		cat10.getLivros().addAll(Arrays.asList(l17, l18));
+		cat11.getLivros().addAll(Arrays.asList(l19, l20));
+		cat12.getLivros().addAll(Arrays.asList(l21, l22));
 
-		this.categoriaRepository.saveAll(Arrays.asList(cat1, cat2, cat3, cat4, cat5, cat6, cat7, cat8, cat9, cat10));
-		this.livroRepository.saveAll(Arrays.asList(l1, l2, l3, l4, l5, l6, l7, l8, l9, l10, l11, l12, l13, l14, l15, l16, l17, l18));
+		this.categoriaRepository.saveAll(Arrays.asList(cat1, cat2, cat3, cat4, cat5, cat6, cat7, cat8, cat9, cat10, cat11, cat12));
+		this.livroRepository.saveAll(Arrays.asList(l1, l2, l3, l4, l5, l6, l7, l8, l9, l10, l11, l12, l13, l14, l15, l16, l17, l18, l19, l20, l21, l22));
 	}
 
 }
