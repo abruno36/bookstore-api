@@ -1,5 +1,6 @@
 package com.bruno.bookstore.resources;
 
+import java.net.URI;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -23,7 +24,6 @@ import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 import com.bruno.bookstore.domain.Livro;
 import com.bruno.bookstore.dtos.LivroDTO;
 import com.bruno.bookstore.services.LivroService;
-import java.net.URI;
 
 @CrossOrigin("*")
 @RestController
