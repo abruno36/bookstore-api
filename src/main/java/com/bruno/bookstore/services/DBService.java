@@ -28,11 +28,12 @@ public class DBService {
 		Categoria cat5 = new Categoria(null, "Livros Clássicos", "Literatura Classicas");
 		Categoria cat6 = new Categoria(null, "Ficção Científica", "Livros Cientificos");
 		Categoria cat7 = new Categoria(null, "Livros Infantis", "Histórias engraçadas");
-		Categoria cat8 = new Categoria(null, "eBooks em Inglês", "Recomendados para você | Histórias em geral");
+		Categoria cat8 = new Categoria(null, "EBooks em Inglês", "Recomendados para você | Histórias em geral");
 		Categoria cat9 = new Categoria(null, "Matemática Informática", "Matemática na Informática");
 		Categoria cat10 = new Categoria(null, "Geografia", "Ensino de Geografia aplicada no ensino fundamental");
 		Categoria cat11 = new Categoria(null, "Histórias do Mar", "Histórias relacionadas ao mar e oceanos");
 		Categoria cat12 = new Categoria(null, "Magia Natural", "Mágicas na sua naturalidade");
+		Categoria cat13 = new Categoria(null, "Livros que viraram filmes e séries", "Histórias que se tornaram filmes e séries");
 
 		Livro l1 = new Livro(null, "Clean Code", "Robert Martin",
 				"Ao contrário do que se acredita, Lorem Ipsum não é simplesmente um texto randômico. ", cat1);
@@ -117,6 +118,21 @@ public class DBService {
 		Livro l22 = new Livro(null, "Segredos da Magia e Bruxaria", "Pierre Macedo",
 				"A palavra-chave deste livro é praticidade. Ele é destinado a quem quer praticar magia de forma rápida, sem a necessidade de ler longos livros teóricos. Com Segredos da Magia e Bruxaria, você aprende enquanto pratica. Ele contém uma variedade de feitiços e rituais exclusivos, como amor, dinheiro, beleza, evocações, proteção. O leitor também será introduzido aos selos mágicos, também chamados de sigilos, tais como selos de espíritos e planetários. Nenhum outro livro ensina a maneira correta de se evocar Lúcifer e Miguel. Nenhum outro livro fornece um ritual detalhado de beleza com os deuses nórdicos Frey e Freya ou um poderoso feitiço de amor com a misteriosa Lilith. Nenhum outro autor jamais abordou tantos assuntos, desde amor até magia planetária, em uma única obra, como Pierre Macedo fez. Não importa se você é um praticante de magia branca ou magia negra, um seguidor da Wicca ou se você precisa de alguma ajuda espiritual, esta obra foi escrita para você. Agora você tem em suas mãos a chave para mudar o curso da sua vida.",
 				cat12);
+		Livro l23 = new Livro(null, "Mulherzinhas", "Louisa May Alcott",
+				"Talvez você não tenha ouvido falar de Louisa May Alcott, mas deve ter ouvido a respeito de Jane Austen. Pode ser que não tenha visto o filme “Adoráveis mulheres” de 1994, estrelando Winona Ryder, mas talvez tenha visto “Lady Bird” de 2017, dirigido por Greta Gerwig. Ao longo das páginas de \"Mulherzinhas\", o leitor entenderá o que une essas obras: fortes personagens femininas que marcaram e continuam a marcar gerações. Acompanhe as aventuras, dores, desilusões amorosas, perdas e aprendizados das irmãs March e descubra o que torna esse livro um dos mais queridos e relevantes da literatura mundial.",
+				cat13);
+		Livro l24 = new Livro(null, "O sol também é uma estrela", "Nicola Yoon",
+				"Natasha: Sou uma garota que acredita na ciência e nos fatos. Não acredito na sorte. Nem no destino. Muito menos em sonhos que nunca se tornarão realidade. Não sou o tipo de garota que se apaixona perdidamente por um garoto bonito que encontra numa rua movimentada de Nova York. Não quando minha família está a 12 horas de ser deportada para a Jamaica. Apaixonar-me por ele não pode ser a minha história.\r\n"
+				+ "\r\n"
+				+ "Daniel: Sou um bom filho e um bom aluno. Sempre estive à altura das grandes expectativas dos meus pais. Nunca me permiti ser o poeta. Nem o sonhador. Mas, quando a vi, esqueci de tudo isso. Há alguma coisa em Natasha que me faz pensar que o destino tem algo extraordinário reservado para nós dois.\r\n"
+				+ "\r\n"
+				+ "O Universo: Cada momento de nossas vidas nos trouxe a este instante único. Há um milhão de futuros diante de nós. Qual deles se tornará realidade?",
+				cat13);
+		Livro l25 = new Livro(null, "A tenda vermelha", "Anita Diamant",
+				"Seu nome é Dinah. Na Bíblia, sua vida é mencionada em um breve episódio no livro do Gênesis, nos capítulos sobre seu pai, Jacó. Narrado na voz de Dinah, este romance revela as tradições e as turbulências de ser mulher na antiguidade. A tenda vermelha era o lugar em que as mulheres se reuniam durante seus ciclos de nascimento e menstruação ou quando estavam doentes. Imaginando as conversas e os mistérios mantidos dentro dessa tenda exclusivamente feminina, Anita Diamant nos oferece um olhar privilegiado sobre a vida diária das quatro esposas de Jacó, mães de seus doze filhos homens, e sobre o convívio com sua única filha, Dinah. Com o resgate desse olhar feminino, conhecemos as fascinantes mulheres que sangraram, trocaram palavras, experiências e rituais na tenda vermelha.\r\n"
+				+ "\r\n"
+				+ "Em uma voz íntima e poética, Dinah sussurra histórias sobre suas quatro “mães”, Raquel, Lia, Zilpah e Bilah, que a inspiraram com seus traços femininos únicos. Conforme histórias permeadas de sensualidade, intuição e fortes emoções vão sendo narradas, descortina-se um mundo de caravanas, escravos, artesãos, príncipes, milagres e segredos femininos, até o momento em que Dinah mergulha em sua própria saga de paixão, traições e sofrimento.",
+				cat13);
 		
 		cat1.getLivros().addAll(Arrays.asList(l1, l16));
 		cat2.getLivros().addAll(Arrays.asList(l2, l3));
@@ -130,9 +146,10 @@ public class DBService {
 		cat10.getLivros().addAll(Arrays.asList(l17, l18));
 		cat11.getLivros().addAll(Arrays.asList(l19, l20));
 		cat12.getLivros().addAll(Arrays.asList(l21, l22));
+		cat13.getLivros().addAll(Arrays.asList(l23, l24, l25));
 
-		this.categoriaRepository.saveAll(Arrays.asList(cat1, cat2, cat3, cat4, cat5, cat6, cat7, cat8, cat9, cat10, cat11, cat12));
-		this.livroRepository.saveAll(Arrays.asList(l1, l2, l3, l4, l5, l6, l7, l8, l9, l10, l11, l12, l13, l14, l15, l16, l17, l18, l19, l20, l21, l22));
+		this.categoriaRepository.saveAll(Arrays.asList(cat1, cat2, cat3, cat4, cat5, cat6, cat7, cat8, cat9, cat10, cat11, cat12, cat13));
+		this.livroRepository.saveAll(Arrays.asList(l1, l2, l3, l4, l5, l6, l7, l8, l9, l10, l11, l12, l13, l14, l15, l16, l17, l18, l19, l20, l21, l22, l23, l24, l25));
 	}
 
 }
