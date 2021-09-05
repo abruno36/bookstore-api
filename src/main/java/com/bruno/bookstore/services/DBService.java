@@ -21,19 +21,20 @@ public class DBService {
 
 	public void instanciaBaseDeDados() {
 		
-		Categoria cat1 = new Categoria(null, "Informática", "Livros de TI");
-		Categoria cat2 = new Categoria(null, "Culinária", "Livros de Alimentações e Receitas");
-		Categoria cat3 = new Categoria(null, "Romance", "Livros em geral");
-		Categoria cat4 = new Categoria(null, "Suspense", "Livros de suspense e terror");
+		Categoria cat1 = new Categoria(null, "Livros de Informática", "Tecnologia da Informação");
+		Categoria cat2 = new Categoria(null, "Livros de Culinária", "Alimentações e Receitas");
+		Categoria cat3 = new Categoria(null, "Livros de Romance", "Livros em geral");
+		Categoria cat4 = new Categoria(null, "Livros de Suspense", "Suspense e Terror");
 		Categoria cat5 = new Categoria(null, "Livros Clássicos", "Literatura Classicas");
-		Categoria cat6 = new Categoria(null, "Ficção Científica", "Livros Cientificos");
+		Categoria cat6 = new Categoria(null, "Livros de Ficção Científica", "Livros Cientificos");
 		Categoria cat7 = new Categoria(null, "Livros Infantis", "Histórias engraçadas");
 		Categoria cat8 = new Categoria(null, "EBooks em Inglês", "Recomendados para você | Histórias em geral");
-		Categoria cat9 = new Categoria(null, "Matemática Informática", "Matemática na Informática");
-		Categoria cat10 = new Categoria(null, "Geografia", "Ensino de Geografia aplicada no ensino fundamental");
-		Categoria cat11 = new Categoria(null, "Histórias do Mar", "Histórias relacionadas ao mar e oceanos");
-		Categoria cat12 = new Categoria(null, "Magia Natural", "Mágicas na sua naturalidade");
+		Categoria cat9 = new Categoria(null, "Livros de Matemática Informática", "Matemática na Informática");
+		Categoria cat10 = new Categoria(null, "Livros de Geografia", "Ensino de Geografia aplicada no ensino fundamental");
+		Categoria cat11 = new Categoria(null, "Livros de Histórias do Mar", "Histórias relacionadas ao mar e oceanos");
+		Categoria cat12 = new Categoria(null, "Livros de Magia Natural", "Mágicas na sua naturalidade");
 		Categoria cat13 = new Categoria(null, "Livros que viraram filmes e séries", "Histórias que se tornaram filmes e séries");
+		Categoria cat14 = new Categoria(null, "Livros de Direito Constitucional", "Tudo sobre as leis do direito constitucional");
 
 		Livro l1 = new Livro(null, "Clean Code", "Robert Martin",
 				"Ao contrário do que se acredita, Lorem Ipsum não é simplesmente um texto randômico. ", cat1);
@@ -148,7 +149,7 @@ public class DBService {
 		cat12.getLivros().addAll(Arrays.asList(l21, l22));
 		cat13.getLivros().addAll(Arrays.asList(l23, l24, l25));
 
-		this.categoriaRepository.saveAll(Arrays.asList(cat1, cat2, cat3, cat4, cat5, cat6, cat7, cat8, cat9, cat10, cat11, cat12, cat13));
+		this.categoriaRepository.saveAll(Arrays.asList(cat1, cat2, cat3, cat4, cat5, cat6, cat7, cat8, cat9, cat10, cat11, cat12, cat13, cat14));
 		this.livroRepository.saveAll(Arrays.asList(l1, l2, l3, l4, l5, l6, l7, l8, l9, l10, l11, l12, l13, l14, l15, l16, l17, l18, l19, l20, l21, l22, l23, l24, l25));
 	}
 
