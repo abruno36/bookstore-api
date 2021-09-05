@@ -134,6 +134,27 @@ public class DBService {
 				+ "\r\n"
 				+ "Em uma voz íntima e poética, Dinah sussurra histórias sobre suas quatro “mães”, Raquel, Lia, Zilpah e Bilah, que a inspiraram com seus traços femininos únicos. Conforme histórias permeadas de sensualidade, intuição e fortes emoções vão sendo narradas, descortina-se um mundo de caravanas, escravos, artesãos, príncipes, milagres e segredos femininos, até o momento em que Dinah mergulha em sua própria saga de paixão, traições e sofrimento.",
 				cat13);
+		Livro l26 = new Livro(null, "Dos Delitos e das Penas", "Paulo M. Oliveira",
+				"Desde a sua primeira edição, em 1764, Dos Delitos e Das Penas provocou (e continua provocando) as mais intensas polêmicas, devido principalmente ao seu embasamento francamente humanista.\r\n"
+				+ "\r\n"
+				+ "Os temas aqui discutidos – pena de morte, acusações secretas, prisão, torturas, roubo, contrabando, entre outros – continuam despertando o interesse de profissionais, pesquisadores e estudiosos, tornando esta obra, hoje clássica, uma permanente e profícua fonte de inspiração e reflexão para todos os que se preocupam com os Direitos Humanos.\r\n"
+				+ "\r\n"
+				+ "A presente obra constitui-se num tratado que impulsionou grandes modificações no Direito Penal internacional e também nas Constituições Brasileiras, cuja influência encontra-se presente nos princípios da anterioridade, da legalidade, da responsabilidade pessoal, da irretroatividade da lei penal, da presunção de inocência, da proporcionalidade da pena, entre outros.\r\n"
+				+ "\r\n"
+				+ "A intensa comoção instaurada a partir da sua publicação permanece viva a inspirar reflexões e o constante repensar de todos aqueles que se ocupam da solidificação do respeito aos Direitos Humanos.",
+				cat14);
+		Livro l27 = new Livro(null, "Código de Defesa do Consumidor 2021", "Jair Lot Vieira",
+				"Decreto nº 2.181, de 20 de março de 1997 – Sistema Nacional de Defesa do Consumidor (SNDC) / Normas gerais de aplicação das sanções administrativas;\r\n"
+				+ "Decreto nº 5.903, de 20 de setembro de 2006 – Informações adequadas e claras sobre produtos e serviços;\r\n"
+				+ "Decreto nº 6.523, de 31 de julho de 2008 – Serviço de Atendimento ao Consumidor – SAC;\r\n"
+				+ "Decreto nº 7.962, de 15 de março de 2013 – Normas sobre contratos de consumo no comércio eletrônico.",
+				cat14);
+		Livro l28 = new Livro(null, "Armas de Fogo e Legítima Defesa", "Allan Antunes Marinho Leandro",
+				"A atenta e agradável leitura da obra a seguir, conduzirá o leitor interessado por caminhos do conhecimento e da reflexão relativos a alguns, importantes e difundidos, mitos concernentes ao manuseio de armas de fogo no exercício da Legítima Defesa. Além disso, irá proporcionar, a todos os que têm curiosidade sobre o tema, uma didática e fundamentada noção da desconstrução de tais mitos, o que é feito com extrema competência pelo Autor que se vale, não só, de significativa experiência profissional, assim como de ensinamentos teórico doutrinários de importante relevância. Sem qualquer demérito àqueles que já se lançaram à dificílima tarefa de enfrentar tão árduo assunto, a presente obra, de conteúdo inteligente e rigorosamente fundamentado, possibilita a quem se deleitar com sua leitura, a aquisição de saber indispensável. Ouso mencionar, que esta obra, em face de seu relevante conteúdo e qualidade técnica, torna-se de importância fundamental para a difusão do tema abordado e deverá povoar, obrigatoriamente, as estantes de Magistrados, Promotores de Justiça, Agentes de Segurança Pública, Jornalistas, além de todos que estejam legalmente habilitados a portar uma arma de fogo para sua defesa pessoal. Ao Autor, Allan Antunes Marinho Leandro, Instrutor da ACADEPOL/SC e amigo, meus votos de sucesso contínuo e o sincero agradecimento pela honra em poder prefaciar esta que, induvidosamente, imagino seja a primeira de muitas outras contribuições que sua competência irá produzir a fim de complementar o conteúdo acadêmico sobre tema de tal magnitude. Stanley da Silva Braga Desembargador TJSC Florianópolis, outono/2016.",
+				cat14);
+		Livro l29 = new Livro(null, "Saúde Mental, Gênero e Dispositivos: Cultura e Processos de Subjetivação", "Valeska Zanello",
+				"Por que mulheres têm tantas queixas na esfera do amor? De se sentirem não amadas, de não receberem tanto afeto quanto gostariam ou sentem que oferecem e, um fato que sempre me encucou, simplesmente por estarem sozinhas? Por que quando não têm alguém se sentem ?encalhadas?? Por que mulheres que são mães carregam tanta culpa? E as que não são, por que se sentem na obrigação de estarem disponíveis a cuidar dos demais? E, de outro lado, por que os homens, diferentemente das mulheres, se preocupam-se tanto com o seu desempenho no trabalho e na vida sexual? Por que certas experiências, como, por exemplo, o desemprego, a aposentadoria ou a impotência, são tão ameaçadoras para eles enquanto homens?\" Essas são as questões que, nas palavras da Prof.a Dr.a Valeska Zanello, nortearam a escrita deste livro. Como ela mesma ressalta: \"Um ponto então se delineou claramente para mim: o sofrimento apresenta-se de forma gendrada. Em culturas sexistas, como o Brasil, tornar-se pessoa é tornar-se homem ou mulher, em um binarismo que ainda estamos longe de desconstruir. Assim, como conceber categorias analíticas que nos amparem a pensar, a escutar e a intervir clinicamente levando em consideração as especificidades de gênero? Quais são os mecanismos que moldam esses processos de subjetivação? E que pedagogias afetivas são utilizadas?\". O presente livro é fruto de 20 anos de experiência na clínica psicoterápica e 13 em pesquisas na área de saúde mental, sob a perspectiva de gênero, por parte da autora. Valeska Zanello, professora adjunta do Departamento de Psicologia Clínica da Universidade de Brasília, tem se dedicado a estudar e compreender os processos de subjetivação que se configuraram historicamente em nossa cultura, no Brasil, e como, atualmente, homens e mulheres se subjetivam, sofrem e se expressam de formas diferentes.",
+				cat14);
 		
 		cat1.getLivros().addAll(Arrays.asList(l1, l16));
 		cat2.getLivros().addAll(Arrays.asList(l2, l3));
@@ -148,9 +169,10 @@ public class DBService {
 		cat11.getLivros().addAll(Arrays.asList(l19, l20));
 		cat12.getLivros().addAll(Arrays.asList(l21, l22));
 		cat13.getLivros().addAll(Arrays.asList(l23, l24, l25));
+		cat14.getLivros().addAll(Arrays.asList(l26, l27, l28, l29));
 
 		this.categoriaRepository.saveAll(Arrays.asList(cat1, cat2, cat3, cat4, cat5, cat6, cat7, cat8, cat9, cat10, cat11, cat12, cat13, cat14));
-		this.livroRepository.saveAll(Arrays.asList(l1, l2, l3, l4, l5, l6, l7, l8, l9, l10, l11, l12, l13, l14, l15, l16, l17, l18, l19, l20, l21, l22, l23, l24, l25));
+		this.livroRepository.saveAll(Arrays.asList(l1, l2, l3, l4, l5, l6, l7, l8, l9, l10, l11, l12, l13, l14, l15, l16, l17, l18, l19, l20, l21, l22, l23, l24, l25, l26, l27, l28, l29));
 	}
 
 }
